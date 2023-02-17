@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_main">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_7sdp"
+            android:layout_marginRight="@dimen/_7sdp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/relgenreal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/textgeneral"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/gravitybold"
+                        android:text="General"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relunit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_1sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_7sdp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/txtunit"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/gravitybold"
+                        android:gravity="left|center_vertical|center_horizontal|center"
+                        android:maxLines="1"
+                        android:padding="@dimen/_6sdp"
+                        android:text="Unit"
+                        android:textColor="@color/darkblue"
+                        android:textSize="@dimen/_11sdp" />
+
+                    <TextView
+                        android:id="@+id/txtkgml"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_weight="0.15"
+                        android:fontFamily="@font/font"
+                        android:text="kg,ml"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_11sdp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:background="#7be2e2e2" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relunit"
+                android:padding="@dimen/_1sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_7sdp">
+
+                    <TextView
+                        android:id="@+id/notificationtext"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/is_notification"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/gravitybold"
+                        android:gravity="left|center_vertical|center_horizontal|center"
+                        android:maxLines="1"
+                        android:padding="@dimen/_6sdp"
+                        android:text="Notification Toggle"
+                        android:textColor="@color/darkblue"
+                        android:textSize="@dimen/_11sdp" />
+
+                    <CheckBox
+                        android:id="@+id/is_notification"
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:button="@drawable/toggle_selector"
+                        android:checked="true"
+                        android:text=""
+                        android:textOff=""
+                        android:textOn="" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relpersonal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/textpersnol"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/gravitybold"
+                        android:text="Personal data"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relpersonaldetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relpersonal"
+                android:padding="@dimen/_1sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_7sdp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/txtgender"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/gravitybold"
+                        android:gravity="left|center_vertical|center_horizontal|center"
+                        android:maxLines="1"
+                        android:padding="@dimen/_6sdp"
+                        android:text="Gender"
+                        android:textColor="@color/darkblue"
+                        android:textSize="@dimen/_11sdp" />
+
+                    <TextView
+                        android:id="@+id/txtgender2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_weight="0.15"
+                        android:fontFamily="@font/font"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_11sdp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:background="#7be2e2e2" />
+
+            <RelativeLayout
+                android:id="@+id/relweight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relpersonaldetail"
+                android:padding="@dimen/_1sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_7sdp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/textweight"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/gravitybold"
+                        android:gravity="left|center_vertical|center_horizontal|center"
+                        android:maxLines="1"
+                        android:padding="@dimen/_6sdp"
+                        android:text="Weight"
+                        android:textColor="@color/darkblue"
+                        android:textSize="@dimen/_11sdp" />
+
+                    <TextView
+                        android:id="@+id/textweight2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_weight="0.15"
+                        android:fontFamily="@font/font"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_11sdp" />
+
+                    <TextView
+                        android:id="@+id/textweightkglb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_weight="0.15"
+                        android:fontFamily="@font/font"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_11sdp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:background="#7be2e2e2" />
+
+            <RelativeLayout
+                android:id="@+id/relwaketime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relweight"
+                android:padding="@dimen/_1sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_7sdp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/textwaketime"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/gravitybold"
+                        android:gravity="left|center_vertical|center_horizontal|center"
+                        android:maxLines="1"
+                        android:padding="@dimen/_6sdp"
+                        android:text="Wakeup Time"
+                        android:textColor="@color/darkblue"
+                        android:textSize="@dimen/_11sdp" />
+
+                    <TextView
+                        android:id="@+id/textwaketime2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_weight="0.15"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_11sdp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:background="#7be2e2e2" />
+
+
+            <RelativeLayout
+                android:id="@+id/relsleeptime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relwaketime"
+                android:padding="@dimen/_1sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_7sdp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/textsleeptime"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/gravitybold"
+                        android:gravity="left|center_vertical|center_horizontal|center"
+                        android:maxLines="1"
+                        android:padding="@dimen/_6sdp"
+                        android:text="Sleep Time"
+                        android:textColor="@color/darkblue"
+                        android:textSize="@dimen/_11sdp" />
+
+                    <TextView
+                        android:id="@+id/textsleeptime2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_weight="0.15"
+                        android:fontFamily="@font/font"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_11sdp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relreminder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/textreminder"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/gravitybold"
+                        android:text="Reminder settings"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relinterval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relreminder"
+                android:padding="@dimen/_1sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_7sdp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/txtreminder"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/gravitybold"
+                        android:gravity="left|center_vertical|center_horizontal|center"
+                        android:maxLines="1"
+                        android:padding="@dimen/_6sdp"
+                        android:text="Reminder Interval"
+                        android:textColor="@color/darkblue"
+                        android:textSize="@dimen/_11sdp" />
+
+                    <TextView
+                        android:id="@+id/txtreminder2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_weight="0.15"
+                        android:fontFamily="@font/font"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_11sdp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:background="#7be2e2e2" />
+
+            <RelativeLayout
+                android:id="@+id/relreminderauto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relinterval"
+                android:padding="@dimen/_1sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_7sdp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/textreminderauto"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/gravitybold"
+                        android:gravity="left|center_vertical|center_horizontal|center"
+                        android:maxLines="1"
+                        android:padding="@dimen/_6sdp"
+                        android:text="Reminder Mode"
+                        android:textColor="@color/darkblue"
+                        android:textSize="@dimen/_11sdp" />
+
+                    <TextView
+                        android:id="@+id/textreminderauto2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_weight="0.15"
+                        android:fontFamily="@font/font"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_11sdp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:background="#7be2e2e2" />
+
+            <RelativeLayout
+                android:id="@+id/relnotification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relreminderauto"
+                android:padding="@dimen/_1sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_7sdp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/textnotification"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/gravitybold"
+                        android:gravity="left|center_vertical|center_horizontal|center"
+                        android:maxLines="1"
+                        android:padding="@dimen/_6sdp"
+                        android:text="Show Notification"
+                        android:textColor="@color/darkblue"
+                        android:textSize="@dimen/_11sdp" />
+
+                    <TextView
+                        android:id="@+id/textnotification_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_weight="0.15"
+                        android:fontFamily="@font/font"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_11sdp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/adMobView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center" />
+</LinearLayout>

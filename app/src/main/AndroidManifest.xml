@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="drinkwater.health.waterdrinkalarm.watertracker.drinkwaterreminder">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="drinkwater.health.waterdrinkalarm.watertracker.drinkwaterreminder.Activity.StartingActivity"
+            android:screenOrientation="portrait"
+            android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <receiver android:name="drinkwater.health.waterdrinkalarm.watertracker.drinkwaterreminder.ReceiverAndService.BootReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.PACKAGE_RESTARTED" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.DATE_CHANGED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWEROFF" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+        <service android:name="drinkwater.health.waterdrinkalarm.watertracker.drinkwaterreminder.ReceiverAndService.ScheduleAlarmService" />
+
+        <receiver
+            android:name="drinkwater.health.waterdrinkalarm.watertracker.drinkwaterreminder.Activity.recieve"
+            android:exported="true" />
+        <receiver
+            android:name="drinkwater.health.waterdrinkalarm.watertracker.drinkwaterreminder.ReceiverAndService.AlarmReceiver"
+            android:exported="true" />
+
+        <activity
+            android:name="drinkwater.health.waterdrinkalarm.watertracker.drinkwaterreminder.Activity.FirstguideActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="drinkwater.health.waterdrinkalarm.watertracker.drinkwaterreminder.Activity.SecondguideActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="drinkwater.health.waterdrinkalarm.watertracker.drinkwaterreminder.Activity.ThirdguideActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="drinkwater.health.waterdrinkalarm.watertracker.drinkwaterreminder.Activity.HomeActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name="drinkwater.health.waterdrinkalarm.watertracker.drinkwaterreminder.Activity.LockScreen"
+            android:autoRemoveFromRecents="true"
+            android:launchMode="singleTop"
+            android:theme="@style/TransparentCompat" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-1782512705695738~9844730814"/>
+    </application>
+
+</manifest>

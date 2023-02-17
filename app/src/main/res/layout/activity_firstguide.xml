@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <drinkwater.health.waterdrinkalarm.watertracker.drinkwaterreminder.Helper.Guidebar
+        android:id="@+id/guidebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_40sdp" />
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/guidebar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/_50sdp"
+        android:layout_marginRight="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:gravity="center"
+        android:fontFamily="@font/font"
+        android:text="@string/customedrinkwaterinfo"
+        android:textColor="#3d3d3d"
+        android:textSize="@dimen/_12sdp" />
+
+    <TextView
+        android:id="@+id/en"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gender"
+        android:fontFamily="@font/gravitybold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:text="@string/gender"
+        android:textColor="#3d3d3d"
+        android:textSize="@dimen/_17sdp" />
+
+    <LinearLayout
+        android:id="@+id/intro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/en"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/relmale"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/maleimg"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_25sdp"
+                android:layout_centerHorizontal="true"
+                app:srcCompat="@drawable/man" />
+
+            <Button
+                android:id="@+id/Male"
+                android:layout_width="@dimen/_55sdp"
+                android:layout_height="@dimen/_21sdp"
+                android:layout_below="@+id/maleimg"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_25sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@android:color/transparent"
+                android:text="@string/male"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:fontFamily="@font/gravitybold"
+                android:textColor="#3d3d3d"
+                android:textSize="@dimen/_9sdp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relfemale"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/em"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:layout_centerHorizontal="true"
+                app:srcCompat="@drawable/woman" />
+
+            <Button
+                android:id="@+id/female"
+                android:layout_width="@dimen/_55sdp"
+                android:layout_height="@dimen/_21sdp"
+                android:layout_below="@+id/em"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/gravitybold"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:text="@string/female"
+                android:textAllCaps="false"
+                android:textColor="#3d3d3d"
+                android:textSize="@dimen/_9sdp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Next"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_33sdp"
+        android:layout_below="@+id/intro"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_bg"
+        android:text="@string/next"
+        android:fontFamily="@font/gravitybold"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12sdp" />
+
+    <TextView
+        android:id="@+id/Skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/_12sdp"
+        android:text="@string/skip"
+        android:fontFamily="@font/gravitybold"
+        android:textColor="#3d3d3d"
+        android:textSize="@dimen/_14sdp" />
+</RelativeLayout>

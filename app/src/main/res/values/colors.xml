@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#000000</color>
+    <color name="blue">#10cec1</color>
+    <color name="colorAccent">#10cec1</color>
+    <color name="colorPrimary">#10cec1</color>
+    <color name="colorPrimaryDark">#0eb3a7</color>
+    <color name="darkblue">#09746b</color>
+    <color name="darkgray">#aaa</color>
+    <color name="gray">#e1e1e1</color>
+    <color name="white">#ffffff</color>
+    <color name="dialogtext">#585858</color>
+    <color name="noti">#A7A7A7</color>
+
+</resources>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/_230sdp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/backgotit">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="@font/gravitybold"
+        android:padding="@dimen/_5sdp"
+        android:text="Show Notification"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/_15sdp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupnotification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <RadioButton
+            android:id="@+id/radsimplenotification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:fontFamily="@font/font"
+            android:text="Simple Notification"
+            android:textColor="@color/dialogtext"
+            android:textSize="@dimen/_11sdp" />
+
+        <RadioButton
+            android:id="@+id/radadvancenotification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:fontFamily="@font/font"
+            android:text="Full Screen Notification"
+            android:textColor="@color/dialogtext"
+            android:textSize="@dimen/_11sdp" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:gravity="center"
+        android:layout_below="@+id/radioGroupnotification"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="@dimen/_75sdp"
+            android:layout_height="@dimen/_27sdp"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttoncancelnotification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_bg"
+                android:text="Cancel"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11sdp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/_75sdp"
+            android:layout_height="@dimen/_27sdp"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttonoknotification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_bg"
+                android:text="Ok"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11sdp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

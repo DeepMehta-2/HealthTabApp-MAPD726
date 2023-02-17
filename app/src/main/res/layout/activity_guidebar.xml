@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:background="@drawable/b3"
+            android:gravity="center"
+            android:fontFamily="@font/font"
+            android:padding="@dimen/_1sdp"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp" />
+
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_toRightOf="@+id/textView"
+            android:background="@drawable/b2"
+            android:layerType="software" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_toRightOf="@+id/view1"
+            android:gravity="center"
+            android:background="@drawable/btn_guide"
+            android:text="2"
+            android:fontFamily="@font/font"
+            android:textColor="#3d3d3d"
+            android:textSize="@dimen/_12sdp" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_toRightOf="@+id/textView2"
+            android:background="@drawable/b2"
+            android:layerType="software" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_toRightOf="@+id/view2"
+            android:background="@drawable/btn_guide"
+            android:gravity="center"
+            android:padding="@dimen/_1sdp"
+            android:text="3"
+            android:textColor="#3d3d3d"
+            android:textSize="@dimen/_12sdp" />
+    </RelativeLayout>
+</RelativeLayout>
