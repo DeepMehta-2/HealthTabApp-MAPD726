@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<attr name="customFont" format="string" />-->
+    <attr name="spb_stateBackgroundColor" format="color" />
+    <attr name="spb_stateDescriptionColor" format="color" />
+    <attr name="spb_stateDescriptionSize" format="dimension" />
+    <attr name="spb_stateForegroundColor" format="color" />
+    <attr name="spb_stateLineThickness" format="dimension" />
+    <attr name="spb_stateNumberBackgroundColor" format="color" />
+    <attr name="spb_stateNumberForegroundColor" format="color" />
+    <attr name="spb_stateNumberIsDescending" format="boolean" />
+    <attr name="spb_stateSize" format="dimension" />
+    <attr name="spb_stateTextSize" format="dimension" />
+
+    <attr name="spb_animateToCurrentProgressState" format="boolean" />
+    <attr name="spb_animationDuration" format="integer" />
+    <attr name="spb_animationStartDelay" format="integer" />
+    <attr name="spb_checkStateCompleted" format="boolean" />
+    <attr name="spb_currentStateDescriptionColor" format="color" />
+
+    <attr name="spb_descriptionTopSpaceDecrementer" format="dimension" />
+    <attr name="spb_descriptionTopSpaceIncrementer" format="dimension" />
+    <attr name="spb_enableAllStatesCompleted" format="boolean" />
+    <!--<attr name="zpb_bg_color" format="reference|color" />-->
+    <!--<attr name="zpb_padding" format="dimension" />-->
+    <!--<attr name="zpb_pb_color" format="reference|color" />-->
+    <declare-styleable name="TextViewPlus">
+        <attr name="customFont" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="CircularProgressBar">
+        <attr name="cpb_hasShadow" format="boolean" />
+        <attr name="cpb_progressColor" format="string" />
+        <attr name="cpb_backgroundColor" format="string" />
+        <attr name="cpb_titleColor" format="string" />
+        <attr name="cpb_subtitle" format="string" />
+        <attr name="cpb_title" format="string" />
+        <attr name="cpb_strokeWidth" format="integer" />
+        <attr name="cpb_subtitleColor" format="string" />
+
+    </declare-styleable>
+
+    <declare-styleable name="ZzHorizontalProgressBar">
+        <attr name="zpb_bg_color" format="reference|color" />
+        <attr name="zpb_gradient_from" format="reference|color" />
+        <attr name="zpb_gradient_to" format="reference|color" />
+        <attr name="zpb_max" format="integer" />
+        <attr name="zpb_open_gradient" format="boolean" />
+        <attr name="zpb_open_second_gradient" format="boolean" />
+        <attr name="zpb_padding" format="dimension" />
+        <attr name="zpb_pb_color" format="reference|color" />
+        <attr name="zpb_progress" format="integer" />
+        <attr name="zpb_second_gradient_from" format="reference|color" />
+        <attr name="zpb_second_gradient_to" format="reference|color" />
+        <attr name="zpb_second_pb_color" format="reference|color" />
+        <attr name="zpb_second_progress" format="integer" />
+        <attr name="zpb_show_second_point_shape">
+            <enum name="line" value="1" />
+            <enum name="point" value="0" />
+        </attr>
+        <attr name="zpb_show_second_progress" format="boolean" />
+
+
+    </declare-styleable>
+
+</resources>

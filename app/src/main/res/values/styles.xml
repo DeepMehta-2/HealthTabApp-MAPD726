@@ -1,0 +1,37 @@
+<resources>
+
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="@style/ThemeOverlay.AppCompat.Dark" />
+    <style name="AppTheme.PopupOverlay" parent="@style/ThemeOverlay.AppCompat.Light" />
+    <style name="Widget.ProgressBar.Holo.CircularProgressBar" parent="@style/Widget.ProgressBar.CircularProgressBar">
+        <item name="cpb_hasShadow">false</item>
+        <item name="cpb_strokeWidth">5</item>
+    </style>
+
+    <style name="Widget.ProgressBar.CircularProgressBar" parent="@style/Widget">
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="cpb_hasShadow">true</item>
+        <item name="cpb_progressColor">@color/circular_progress_default_progress</item>
+        <item name="cpb_strokeWidth">20</item>
+        <item name="cpb_subtitleColor">@color/circular_progress_default_subtitle</item>
+        <item name="cpb_titleColor">@color/circular_progress_default_title</item>
+    </style>
+    <style name="Widget" />
+
+    <style name="AppTheme.NoActionBar" parent="@style/AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="tab_text" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:textColor">#0a4960</item>
+        <item name="android:textSize">12sp</item>
+        <!--<item name="android:textStyle">bold</item>-->
+    </style>
+</resources>

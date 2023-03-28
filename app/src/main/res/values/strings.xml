@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Drink Water Reminder</string>
+    <string name="font_regular">font.otf</string>
+    <string name="first_step">First you need to select the types of units</string>
+    <string name="second_step">Inform your weight so we can calculate the amount of water ideal for your consumption</string>
+    <string name="third_step">This is the amount of water we recommend you ingest per day.You can change this amount if necessary</string>
+    <string name="fourth_step">The application will send notifications constantly to remind you to drink water</string>
+    <string name="final_step">All ready! You can change your settings as needed</string>
+    <string name="empty_bottle">"After drinking a glass of water click  +  button to choose drink bottles."</string>
+    <string name="mute">Reminder is turned off</string>
+    <string name="minuse">No,when you are ahead of schedule</string>
+    <string name="vibrate">Auto reminders</string>
+    <string name="volume">Mute,when you are ahead of schedule</string>
+
+</resources>

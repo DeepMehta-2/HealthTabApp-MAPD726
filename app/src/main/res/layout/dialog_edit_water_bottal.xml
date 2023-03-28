@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/_5sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/tvWater"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/ivDelete"
+                    android:fontFamily="@font/font"
+                    android:text="dccd"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp" />
+
+                <ImageView
+                    android:id="@+id/ivDelete"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/iv_delete_water"
+                    android:padding="5dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="15dp">
+
+                <com.kofigyan.stateprogressbar.StateProgressBar
+                    android:id="@+id/usage_stateprogressbar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    app:spb_animateToCurrentProgressState="true"
+                    app:spb_currentStateDescriptionColor="@color/colorAccent"
+                    app:spb_descriptionTopSpaceIncrementer="10dp"
+                    app:spb_maxStateNumber="four"
+                    app:spb_stateBackgroundColor="@color/state_background_color"
+                    app:spb_stateDescriptionColor="@color/state_background_text_color"
+                    app:spb_stateForegroundColor="@color/colorAccent"
+                    app:spb_stateNumberBackgroundColor="@color/state_background_text_color"
+                    app:spb_stateNumberForegroundColor="@color/state_foreground_text_color"
+                    app:spb_stateTextSize="@dimen/_14sdp" />
+            </LinearLayout>
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="@dimen/_15sdp"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_marginTop="@dimen/_5sdp"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<RelativeLayout-->
+            <!--android:id="@+id/cancel_mode"-->
+            <!--android:layout_width="@dimen/_75sdp"-->
+            <!--android:layout_height="@dimen/_25sdp"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_marginRight="@dimen/_10sdp"-->
+            <!--android:background="@drawable/progress_fillcolor"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/btn_cancel"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:fontFamily="@font/font"-->
+            <!--android:text="Cancel"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="@dimen/_11sdp"-->
+            <!--android:visibility="visible" />-->
+
+            <!--</RelativeLayout>-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="@dimen/_75sdp"-->
+            <!--android:layout_height="@dimen/_25sdp"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_marginLeft="@dimen/_10sdp"-->
+            <!--android:background="@drawable/progress_fillcolor"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/btn_save"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:fontFamily="@font/font"-->
+            <!--android:text="save"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="@dimen/_11sdp"-->
+            <!--android:visibility="visible" />-->
+
+            <!--</LinearLayout>-->
+
+            <!--</LinearLayout>-->
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
