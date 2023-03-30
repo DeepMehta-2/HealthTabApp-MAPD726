@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/exit_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
@@ -9,25 +8,16 @@
     android:orientation="vertical"
     android:visibility="visible">
 
-    <LinearLayout
-        android:id="@+id/ll_bg"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:background="@drawable/a_shape">
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <FrameLayout
-                android:id="@+id/native_ad_container"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <!--<include layout="@layout/admob_native1"/>-->
-            </FrameLayout>
+            android:layout_margin="@dimen/_25sdp"
+            android:background="#fff"
+            android:paddingBottom="@dimen/_10sdp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -35,106 +25,66 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/txt1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="@dimen/_10sdp"
-                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
                     android:gravity="center"
-                    android:text="Are you sure to exit??"
-                    android:textColor="#212121"
-                    android:textSize="@dimen/_15sdp"
+                    android:text="Are you sure you want to close this app?"
+                    android:textColor="#3c3a3a"
+                    android:textSize="@dimen/_12sdp"
                     android:textStyle="bold" />
-
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="0.5dp"
-                    android:layout_marginTop="@dimen/_8sdp" />
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="35dp"
+                    android:layout_height="@dimen/_30sdp"
                     android:layout_gravity="center"
-                    android:layout_marginTop="@dimen/_8sdp"
-                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
                     android:gravity="center"
                     android:orientation="horizontal">
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center"
-                        android:layout_weight="1"
-                        android:gravity="center">
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
 
                         <TextView
-                            android:id="@+id/send_feedback"
-                            android:layout_width="@dimen/_100sdp"
-                            android:layout_height="match_parent"
-                            android:layout_gravity="left"
-                            android:background="@drawable/btn_bg"
+                            android:id="@+id/tv_yes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:gravity="center"
-                            android:text="RATE US!"
-                            android:textColor="#fff"
-                            android:textSize="@dimen/_12sdp" />
+                            android:padding="@dimen/_5sdp"
+                            android:text="Yes"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold" />
 
-
-                    </LinearLayout>
-
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginRight="@dimen/_25sdp"
-                        android:layout_weight="1"
-                        android:orientation="horizontal">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
+                        <TextView
+                            android:id="@+id/tv_no"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginRight="@dimen/_6sdp"
                             android:layout_weight="1"
-                            android:background="@drawable/rate_text">
-
-                            <TextView
-                                android:id="@+id/tv_no"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_gravity="center"
-                                android:layout_weight="1"
-                                android:fontFamily="@font/font"
-                                android:gravity="center"
-                                android:padding="@dimen/_5sdp"
-                                android:text="NO"
-                                android:textColor="#414141"
-                                android:textSize="@dimen/_10sdp" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="@dimen/_6sdp"
-                            android:layout_weight="1"
-                            android:background="@drawable/rate_text">
-
-                            <TextView
-                                android:id="@+id/tv_yes"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_gravity="center"
-                                android:layout_weight="1"
-                                android:fontFamily="@font/font"
-                                android:gravity="center"
-                                android:padding="@dimen/_5sdp"
-                                android:text="YES"
-                                android:textColor="#414141"
-                                android:textSize="@dimen/_10sdp" />
-                        </LinearLayout>
+                            android:gravity="center"
+                            android:padding="@dimen/_5sdp"
+                            android:text="No"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold" />
                     </LinearLayout>
                 </LinearLayout>
+
             </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
+    </RelativeLayout>
 </LinearLayout>
