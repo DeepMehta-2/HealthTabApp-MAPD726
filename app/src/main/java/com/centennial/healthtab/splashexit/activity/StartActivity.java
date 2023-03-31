@@ -7,7 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.ImageView;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -35,7 +35,6 @@ import java.util.Locale;
 
 public class StartActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private ImageView ivStart;
     boolean showDialogTrue = false;
     ArrayList<Bottle_Data> bottleDataArrayList = new ArrayList();
     ArrayList<Notification_Data> notificationDataArrayList;
@@ -54,7 +53,9 @@ public class StartActivity extends AppCompatActivity implements View.OnClickList
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_first);
 
-        init();
+        Button btn_start = findViewById(R.id.btn_start);
+        btn_start.setOnClickListener(this);
+
         String stringExtra = getIntent().getStringExtra("action");
         if (stringExtra != null && stringExtra.equals("ShowDialog")) {
             this.showDialogTrue = true;
@@ -199,33 +200,16 @@ public class StartActivity extends AppCompatActivity implements View.OnClickList
         return (parse2.getTime() - parse.getTime()) / 86400000;
     }
 
-
-    private void init() {
-        ivStart = findViewById(R.id.ivStart);
-        ivStart.setOnClickListener(this);
-    }
-
     @Override
     public void onClick(View view) {
-        if (view.getId() == R.id.ivStart) {
-            Intent intent;
-            if (Pref_Utils.getDefaultNotificationListInfo(getApplicationContext()).equals("")) {
-                intent = new Intent(StartActivity.this, SetData_Activity.class);
-                startActivity(intent);
-            } else {
-                intent = new Intent(StartActivity.this, Tab_activity.class);
-                intent.putExtra("action", StartActivity.this.showDialogTrue);
-                startActivity(intent);
-            }
-        }
-    }
-
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        if (resultCode == RESULT_OK && requestCode == 1010) {
-            finish();
+        Intent intent;
+        if (Pref_Utils.getDefaultNotificationListInfo(getApplicationContext()).equals("")) {
+            intent = new Intent(StartActivity.this, SetData_Activity.class);
+            startActivity(intent);
+        } else {
+            intent = new Intent(StartActivity.this, Tab_activity.class);
+            intent.putExtra("action", StartActivity.this.showDialogTrue);
+            startActivity(intent);
         }
     }
 
