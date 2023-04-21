@@ -23,7 +23,7 @@ import androidx.legacy.content.WakefulBroadcastReceiver;
 import com.centennial.healthtab.R;
 import com.centennial.healthtab.activity.Tab_activity;
 import com.centennial.healthtab.object.Notification_Data;
-import com.centennial.healthtab.splashexit.activity.StartActivity;
+import com.centennial.healthtab.activity.StartActivity;
 import com.centennial.healthtab.utils.Constant;
 import com.centennial.healthtab.utils.Pref_Utils;
 import com.centennial.healthtab.utils.Utils;

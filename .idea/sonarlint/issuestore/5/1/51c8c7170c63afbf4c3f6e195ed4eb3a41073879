@@ -1,0 +1,13 @@
+
+i
+java:S1104"NMake ID a static final constant or non-public and provide accessors if needed.(Ã‚ııÿÿÿÿ
+f
+java:S1104"PMake date a static final constant or non-public and provide accessors if needed.(áÊ÷
+x
+java:S1104"]Make onOffNotification a static final constant or non-public and provide accessors if needed.(–¤’üÿÿÿÿ
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(…‹Ö
+g	java:S116"MRename this field "ID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ã‚ııÿÿÿÿ
+f
+java:S1206-"PThis class overrides "equals()" and should therefore also override "hashCode()".(ÜÑã
+_
+java:S4201."IRemove this unnecessary null check; "instanceof" returns false for nulls.(¶Ğ¯Ó

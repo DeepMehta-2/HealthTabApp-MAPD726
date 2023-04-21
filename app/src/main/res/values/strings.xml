@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Drink Water Reminder</string>
+    <string name="app_name">Health Tab</string>
     <string name="font_regular">font.otf</string>
     <string name="first_step">First you need to select the types of units</string>
     <string name="second_step">Inform your weight so we can calculate the amount of water ideal for your consumption</string>
@@ -11,5 +11,6 @@
     <string name="minuse">No,when you are ahead of schedule</string>
     <string name="vibrate">Auto reminders</string>
     <string name="volume">Mute,when you are ahead of schedule</string>
+    <string name="steps">STEPS</string>
 
 </resources>

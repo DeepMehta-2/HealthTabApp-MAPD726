@@ -1,4 +1,4 @@
-package com.centennial.healthtab.splashexit.activity;
+package com.centennial.healthtab.activity;
 
 import android.app.Dialog;
 import android.app.NotificationManager;
@@ -13,8 +13,6 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.centennial.healthtab.R;
-import com.centennial.healthtab.activity.SetData_Activity;
-import com.centennial.healthtab.activity.Tab_activity;
 import com.centennial.healthtab.object.Bottle_Data;
 import com.centennial.healthtab.object.Chart_Data;
 import com.centennial.healthtab.object.Notification_Data;
@@ -54,7 +52,9 @@ public class StartActivity extends AppCompatActivity implements View.OnClickList
         setContentView(R.layout.activity_first);
 
         Button btn_start = findViewById(R.id.btn_start);
+        Button btn_start_walking = findViewById(R.id.btn_start_walking);
         btn_start.setOnClickListener(this);
+        btn_start_walking.setOnClickListener(this);
 
         String stringExtra = getIntent().getStringExtra("action");
         if (stringExtra != null && stringExtra.equals("ShowDialog")) {
@@ -202,14 +202,19 @@ public class StartActivity extends AppCompatActivity implements View.OnClickList
 
     @Override
     public void onClick(View view) {
-        Intent intent;
-        if (Pref_Utils.getDefaultNotificationListInfo(getApplicationContext()).equals("")) {
-            intent = new Intent(StartActivity.this, SetData_Activity.class);
+        if (view.getId() == R.id.btn_start_walking) {
+            Intent intent = new Intent(StartActivity.this, StepCounterActivity.class);
             startActivity(intent);
         } else {
-            intent = new Intent(StartActivity.this, Tab_activity.class);
-            intent.putExtra("action", StartActivity.this.showDialogTrue);
-            startActivity(intent);
+            Intent intent;
+            if (Pref_Utils.getDefaultNotificationListInfo(getApplicationContext()).equals("")) {
+                intent = new Intent(StartActivity.this, SetData_Activity.class);
+                startActivity(intent);
+            } else {
+                intent = new Intent(StartActivity.this, Tab_activity.class);
+                intent.putExtra("action", StartActivity.this.showDialogTrue);
+                startActivity(intent);
+            }
         }
     }
 

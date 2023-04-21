@@ -1,0 +1,7 @@
+
+g	java:S101	"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Ø³ˆıÿÿÿÿ
+@
+java:S2201"*The return value of "equals" must be used.(ğïÈÁ
+C
+java:S1068
+"-Remove this unused "mCalendar" private field.(ÏëÍ€
